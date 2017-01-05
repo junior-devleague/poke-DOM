@@ -22,7 +22,7 @@ function fillGear(){
   for (var i = 0; i < pokemon.length; i++){
     stringOfPokemon += pokemon[i] + " ";
   }
-  document.getElementById('pokemonLeft').innerHTML = "MISSING: " + stringOfPokemon;
+  document.getElementById('pokemonLeft').innerHTML = "<div class='poke-list-miss'>" + "MISSING: " + "</div>" + "<div class='poke-list'>" + stringOfPokemon + "</div>";
 }
 
 function randomNumber(){
@@ -100,10 +100,10 @@ function caughtPokemon(specificPokemon){
       if (count === 7){
         var audio = new Audio('/kanto/audio/victory.mp3');
         audio.play();
-        document.getElementById("pokemonCaught").innerHTML = "You caught them all!!!"
-        document.getElementById("pokemonLeft").innerHTML = "Good job!!!"
+        document.getElementById("pokemonCaught").innerHTML = "You caught them all!!!";
+        document.getElementById("pokemonLeft").innerHTML = "Good job!!!";
         console.log("Professor Oak: Good Job!");
-      }
+      }else
       document.getElementById("pokemonCaught").innerHTML = "CAUGHT: " + count;
       var res = str.replace(specificPokemon, " ");
       document.getElementById("pokemonLeft").innerHTML = res;

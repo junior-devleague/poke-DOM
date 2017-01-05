@@ -31,7 +31,6 @@ span{
   border: 3px solid;
   border-color: #000000;
   border-radius: 5px;
-  /*position: absolute;*/
   bottom: 4%;
   background-color: black;
 }
@@ -89,10 +88,126 @@ span{
 #gear {
   border-style: double;
   border-color: blue;
-  /*position: absolute;*/
   bottom: 0%;
 }
 
 span {
   margin: 5px 5px 5px 5px;
+}
+
+#gear{
+  display: flex;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 520px;
+  border: 3px solid;
+  border-color: #000000;
+  border-radius: 5px;
+  bottom: 4%;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(236,236,236,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(236,236,236,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(236,236,236,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(236,236,236,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(236,236,236,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(236,236,236,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec', GradientType=0 );
+}
+
+#pokemonCaught{
+  height: 30px;
+  width: 234px;
+  color: black;
+  display: inline-block;
+  border: 4px solid;
+  border-color: #dedede;
+  border-radius: 3px;
+  height: 30px;
+  padding-top: 2%;
+  padding-left: 30px;
+  padding-right: 5px;
+  background: rgba(239,49,49,1);
+  background: -moz-linear-gradient(left, rgba(239,49,49,1) 7%, rgba(247,249,250,1) 10%, rgba(247,249,250,1) 18%, rgba(247,249,250,1) 83%, rgba(247,249,250,1) 91%, rgba(242,12,31,1) 95%);
+  background: -webkit-gradient(left top, right top, color-stop(7%, rgba(239,49,49,1)), color-stop(10%, rgba(247,249,250,1)), color-stop(18%, rgba(247,249,250,1)), color-stop(83%, rgba(247,249,250,1)), color-stop(91%, rgba(247,249,250,1)), color-stop(95%, rgba(242,12,31,1)));
+  background: -webkit-linear-gradient(left, rgba(239,49,49,1) 7%, rgba(247,249,250,1) 10%, rgba(247,249,250,1) 18%, rgba(247,249,250,1) 83%, rgba(247,249,250,1) 91%, rgba(242,12,31,1) 95%);
+  background: -o-linear-gradient(left, rgba(239,49,49,1) 7%, rgba(247,249,250,1) 10%, rgba(247,249,250,1) 18%, rgba(247,249,250,1) 83%, rgba(247,249,250,1) 91%, rgba(242,12,31,1) 95%);
+  background: -ms-linear-gradient(left, rgba(239,49,49,1) 7%, rgba(247,249,250,1) 10%, rgba(247,249,250,1) 18%, rgba(247,249,250,1) 83%, rgba(247,249,250,1) 91%, rgba(242,12,31,1) 95%);
+  background: linear-gradient(to right, rgba(239,49,49,1) 7%, rgba(247,249,250,1) 10%, rgba(247,249,250,1) 18%, rgba(247,249,250,1) 83%, rgba(247,249,250,1) 91%, rgba(242,12,31,1) 95%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef3131', endColorstr='#f20c1f', GradientType=1 );
+}
+
+#pokemonLeft{
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  border: 4px solid;
+  border-color: #dedede;
+  border-radius: 3px;
+  margin-left: 10px;
+  padding: 12px;
+  padding-left: 12px;
+  padding-bottom: 9px;
+  height: 140px;
+  width: 200px;
+  background: rgba(247,60,40,1);
+  background: -moz-linear-gradient(top, rgba(247,60,40,1) 0%, rgba(247,60,40,1) 7%, rgba(246,246,246,1) 15%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,60,40,1)), color-stop(7%, rgba(247,60,40,1)), color-stop(15%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(247,60,40,1) 0%, rgba(247,60,40,1) 7%, rgba(246,246,246,1) 15%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(247,60,40,1) 0%, rgba(247,60,40,1) 7%, rgba(246,246,246,1) 15%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(247,60,40,1) 0%, rgba(247,60,40,1) 7%, rgba(246,246,246,1) 15%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(247,60,40,1) 0%, rgba(247,60,40,1) 7%, rgba(246,246,246,1) 15%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f73c28', endColorstr='#ffffff', GradientType=0 );
+}
+
+.poke-list-miss{
+  display: inline-block;
+  /*height: 119px;*/
+}
+
+.poke-list{
+  margin-left: 10px;
+  font-size: 15px;
+  width: 100px;
+  display: flex;
+  height: 150px;
+}
+
+#dex-container{
+  height: 140px;
+  display: inline-block;
+}
+
+.title-dex{
+  margin-left: 5px;
+  height: 80px;
+  margin-top: 45px;
+}
+
+h1 {
+ overflow: hidden;
+ text-align: center;
+ font-size: 19px;
+padding-bottom: 15%;
+}
+
+h1:before,
+h1:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
 }
