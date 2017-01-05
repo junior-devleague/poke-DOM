@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/kanto/css/route20.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Route 20</title>
 </head>
 <body>
@@ -19,9 +20,18 @@
     <div id="Help">
       <div id="pokeDOM" onclick="help()">PokeDOM MANUAL</div>
       <div id="hint-container">
-        <div id="help1" onclick="help1()">HINT 1</div>
-        <div id="help2" onclick="help2()">HINT 2</div>
-        <div id="help3" onclick="help3()">HINT 3</div>
+        <div class="menu-select">
+          <i class="fa fa-caret-right"></i>
+          <div id="help1" onclick="help1()">HINT 1</div>
+        </div>
+        <div class="menu-select">
+          <i class="fa fa-caret-right"></i>
+          <div id="help2" onclick="help2()">HINT 2</div>
+        </div>
+        <div class="menu-select">
+          <i class="fa fa-caret-right"></i>
+          <div id="help3" onclick="help3()">HINT 3</div>
+        </div>
       </div>
     </div>
     <div id="gear">

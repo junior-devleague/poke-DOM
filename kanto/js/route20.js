@@ -1,12 +1,12 @@
 function beginGame(){
-  alert("Hello Trainer!");
-  alert("Right-click the page, click the 'Inspect', and click the 'Console' tab!")
+  //alert("Hello Trainer!");
+  //alert("Right-click the page, click the 'Inspect', and click the 'Console' tab!")
   console.log("\n")
   console.log("Professor Oak: Hello Trainer! You made it just on time!");
   console.log("I was in the middle of testing how Pokemon are able to be traded wirelessly.");
   console.log("In that process, they ran away... into your web application (I mean... it does look like their home...)");
   console.log("Luckily, you came right as they escaped and, since you're a web developer, you'll have an easier time finding them for me!");
-  alert("Trainer received PokeDOM!");
+  //alert("Trainer received PokeDOM!");
   console.log("Use your PokeDOM I've given you to find the hidden Pokemon!");
   console.log("Let one of your instructors know when you're finished and they'll tell me the tricks to catching the Pokemon!");
   console.log("I have to go surfing for the rest of the Pokemon in the World Wide Web!!!");
@@ -27,8 +27,8 @@ function fillGear(){
 
 function randomNumber(){
   var min = 0;
-  var max = 300;
-  return Math.random() * (max - min) + min + 'px';
+  var max = 58;
+  return Math.random() * (max - min) + min + '%';
 }
 
 function randomizePokemon(){
