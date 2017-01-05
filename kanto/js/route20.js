@@ -1,12 +1,12 @@
 function beginGame(){
-  //alert("Hello Trainer!");
-  //alert("Right-click the page, click the 'Inspect', and click the 'Console' tab!")
+  alert("Professor Oak: Hello Trainer!");
+  alert("Right-click the page, click the 'Inspect', and click the 'Console' tab!")
   console.log("\n")
   console.log("Professor Oak: Hello Trainer! You made it just on time!");
   console.log("I was in the middle of testing how Pokemon are able to be traded wirelessly.");
   console.log("In that process, they ran away... into your web application (I mean... it does look like their home...)");
   console.log("Luckily, you came right as they escaped and, since you're a web developer, you'll have an easier time finding them for me!");
-  //alert("Trainer received PokeDOM!");
+  alert("Trainer received PokeDOM!");
   console.log("Use your PokeDOM I've given you to find the hidden Pokemon!");
   console.log("Let one of your instructors know when you're finished and they'll tell me the tricks to catching the Pokemon!");
   console.log("I have to go surfing for the rest of the Pokemon in the World Wide Web!!!");
@@ -25,17 +25,23 @@ function fillGear(){
   document.getElementById('pokemonLeft').innerHTML = "<div class='poke-list-miss'>" + "MISSING: " + "</div>" + "<div class='poke-list'>" + stringOfPokemon + "</div>";
 }
 
-function randomNumber(){
+function randomNumberX(){
   var min = 0;
-  var max = 58;
+  var max = 100;
+  return Math.random() * (max - min) + min + '%';
+}
+
+function randomNumberY(){
+  var min = 0;
+  var max = 50;
   return Math.random() * (max - min) + min + '%';
 }
 
 function randomizePokemon(){
   var pokemon = document.getElementsByTagName('span');
   for (var i = 0; i < pokemon.length; i++) {
-    var xPosition = randomNumber();
-    var yPosition = randomNumber();
+    var xPosition = randomNumberX();
+    var yPosition = randomNumberY();
     pokemon[i].style.position = 'absolute';
     pokemon[i].style.left = xPosition;
     pokemon[i].style.top = yPosition;
@@ -101,7 +107,7 @@ function caughtPokemon(specificPokemon){
         var audio = new Audio('/kanto/audio/victory.mp3');
         audio.play();
         document.getElementById("pokemonCaught").innerHTML = "You caught them all!!!";
-        document.getElementById("pokemonLeft").innerHTML = "Good job!!!";
+        str = "Good job!!!";
         console.log("Professor Oak: Good Job!");
       }else
       document.getElementById("pokemonCaught").innerHTML = "CAUGHT: " + count;

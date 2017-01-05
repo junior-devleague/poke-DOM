@@ -27,6 +27,7 @@ span{
 }
 
 #Help{
+  float: left;
   width: 280px;
   border: 3px solid;
   border-color: #000000;
@@ -97,10 +98,8 @@ span {
 
 #gear{
   display: flex;
-  margin-top: 5px;
-  margin-left: auto;
   margin-right: auto;
-  width: 520px;
+  width: 510px;
   border: 3px solid;
   border-color: #000000;
   border-radius: 5px;
@@ -144,7 +143,6 @@ span {
   border: 4px solid;
   border-color: #dedede;
   border-radius: 3px;
-  margin-left: 10px;
   padding: 12px;
   padding-left: 12px;
   padding-bottom: 9px;
@@ -179,7 +177,6 @@ span {
 }
 
 .title-dex{
-  margin-left: 5px;
   height: 80px;
   margin-top: 45px;
 }
