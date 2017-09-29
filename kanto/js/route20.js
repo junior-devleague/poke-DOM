@@ -91,7 +91,7 @@ function help3(){
 function playAudio(pokeId){
   for (var i = 0; i < pokemon.length; i++) {
     if (pokeId === pokemon[i]) {
-      var audio = new Audio('/kanto/audio/' + pokemon[i] + '.mp3');
+      var audio = new Audio('./kanto/audio/' + pokemon[i] + '.mp3');
       audio.play();
       caughtPokemon(pokemon[i]);
     }
@@ -99,12 +99,12 @@ function playAudio(pokeId){
 }
 
 function caughtPokemon(specificPokemon){
-  document.getElementById(specificPokemon).style.backgroundImage = "url('../../pokeballSprite.png')";
+  document.getElementById(specificPokemon).style.backgroundImage = "url('./pokeballSprite.png')";
     var str = document.getElementById("pokemonLeft").innerHTML;
     if (str.includes(specificPokemon)) {
       ++count;
       if (count === 7){
-        var audio = new Audio('/kanto/audio/victory.mp3');
+        var audio = new Audio('./kanto/audio/victory.mp3');
         audio.play();
         document.getElementById("pokemonCaught").innerHTML = "You caught them all!!!";
         str = "Good job!!!";
